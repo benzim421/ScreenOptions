@@ -31,37 +31,7 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText
-        text="You wake up in a pitch black room, with no memory of who or where you
-        are. About 20 ft away, you see a lit up door."
-      />
-      <RowSeparator />
-      <RowItem
-        title="Go through the door"
-        icon={
-          <AntDesign
-            name="login"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("The Lit Up Door")}
-          />
-        }
-      />
-
-      <RowSeparator />
-
-      <RowItem
-        title="Walk around the room to find something else."
-        icon={
-          <Entypo
-            name="chevron-right"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("Exploration")}
-          />
-        }
-      />
-
+      <StoryText text="The Portal isn't real. You're dead." />
       <RowSeparator />
     </SafeAreaView>
   );

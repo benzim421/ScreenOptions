@@ -1,8 +1,9 @@
 import React from "react";
-import { Linking, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Linking, SafeAreaView, StyleSheet } from "react-native";
 import { RowSeparator, RowItem, StoryText } from "../components/rowitems";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import Navigation from "./Navigation";
 
 const styles = StyleSheet.create({
   text: {
@@ -31,37 +32,19 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText
-        text="You wake up in a pitch black room, with no memory of who or where you
-        are. About 20 ft away, you see a lit up door."
-      />
+      <StoryText text="As you enter into what looks like a magical place, darkness quickly surrounds you. You come to realize that maybe the simulation is playing tricks on you. You are actually on a deserted island with absolutely no resources, making it feel like you're in the movie Castaway. Hahaha, I'm just kidding. You won. Wasn't that simple?" />
       <RowSeparator />
       <RowItem
-        title="Go through the door"
+        title="Victory!"
         icon={
           <AntDesign
             name="login"
             size={24}
             color="black"
-            onPress={() => navigation.push("The Lit Up Door")}
+            onPress={() => navigation.push("Gold Collection")}
           />
         }
       />
-
-      <RowSeparator />
-
-      <RowItem
-        title="Walk around the room to find something else."
-        icon={
-          <Entypo
-            name="chevron-right"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("Exploration")}
-          />
-        }
-      />
-
       <RowSeparator />
     </SafeAreaView>
   );

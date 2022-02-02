@@ -1,8 +1,9 @@
 import React from "react";
-import { Linking, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Linking, SafeAreaView, StyleSheet } from "react-native";
 import { RowSeparator, RowItem, StoryText } from "../components/rowitems";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import Navigation from "./Navigation";
 
 const styles = StyleSheet.create({
   text: {
@@ -31,35 +32,18 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText
-        text="You wake up in a pitch black room, with no memory of who or where you
-        are. About 20 ft away, you see a lit up door."
-      />
+      <StoryText text="You remember that you play baseball, take the gold and throw it perfectly at the tigers eye. It falls to the ground, and isn't able to get back up. Just to make sure you're safe yo=u throw a couple more bars of gold at it. With newfound time, you collect even more gold and walk through the portal. It is the most magical place you've ever seen, and with all of your money you live a happy and successful life. Maybe money does buy a bit of happiness after all." />
       <RowSeparator />
       <RowItem
-        title="Go through the door"
-        icon={
-          <AntDesign
-            name="login"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("The Lit Up Door")}
-          />
-        }
+        title="Good"
+        icon={<AntDesign name="login" size={24} color="black" />}
       />
 
       <RowSeparator />
 
       <RowItem
-        title="Walk around the room to find something else."
-        icon={
-          <Entypo
-            name="chevron-right"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("Exploration")}
-          />
-        }
+        title="Job"
+        icon={<Entypo name="chevron-right" size={24} color="black" />}
       />
 
       <RowSeparator />

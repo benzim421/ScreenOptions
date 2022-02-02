@@ -6,6 +6,10 @@ export const RowSeparator = () => {
   return <View style={styles.separator} />;
 };
 
+export const StoryText = ({ text }) => {
+  return <Text style={styles.storytext}>{text}</Text>;
+};
+
 export const RowItem = ({ title, icon }) => {
   return (
     <TouchableHighlight>
@@ -33,5 +37,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginRight: 20,
+  },
+  storytext: {
+    marginHorizontal: 20,
+    marginBottom: 20,
+    marginTop: 20,
+    color: "red",
+    fontFamily: "American Typewriter",
+    fontSize: 20,
   },
 });

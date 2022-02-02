@@ -1,8 +1,9 @@
 import React from "react";
-import { Linking, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Linking, SafeAreaView, StyleSheet } from "react-native";
 import { RowSeparator, RowItem, StoryText } from "../components/rowitems";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import Navigation from "./Navigation";
 
 const styles = StyleSheet.create({
   text: {
@@ -31,19 +32,16 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText
-        text="You wake up in a pitch black room, with no memory of who or where you
-        are. About 20 ft away, you see a lit up door."
-      />
+      <StoryText text="Without a flashlight, you only have your sense of touch. As you feel around the room you don't find much and you are starting to lose hope. And then, out of nowhere, AAAAAAH!! You fall through a hole in the ground and land on a balance beam hanging over a pool filled with hungry sharks. Looking around nervously, you see an opening that you might be able to jump to. However, there is a person waiting for you if you choose to cross the balance beam." />
       <RowSeparator />
       <RowItem
-        title="Go through the door"
+        title="Attempt to walk across the beam."
         icon={
           <AntDesign
             name="login"
             size={24}
             color="black"
-            onPress={() => navigation.push("The Lit Up Door")}
+            onPress={() => navigation.push("The Beam")}
           />
         }
       />
@@ -51,13 +49,13 @@ export default ({ navigation }) => {
       <RowSeparator />
 
       <RowItem
-        title="Walk around the room to find something else."
+        title="Jump"
         icon={
           <Entypo
             name="chevron-right"
             size={24}
             color="black"
-            onPress={() => navigation.push("Exploration")}
+            onPress={() => navigation.push("The Jump")}
           />
         }
       />

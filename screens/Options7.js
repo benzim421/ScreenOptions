@@ -1,8 +1,9 @@
 import React from "react";
-import { Linking, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Linking, SafeAreaView, StyleSheet } from "react-native";
 import { RowSeparator, RowItem, StoryText } from "../components/rowitems";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import Navigation from "./Navigation";
 
 const styles = StyleSheet.create({
   text: {
@@ -31,33 +32,16 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText
-        text="You wake up in a pitch black room, with no memory of who or where you
-        are. About 20 ft away, you see a lit up door."
-      />
+      <StoryText text="You're slowly making your way across the beam and you feel that you are extremely close to the end. On the final step, a gust of wind hits you and you fall! Mid fall, however, someone catches you from above. Heart pounding through your chest, yelling for help, you get pulled up. You feel relieved and look up to ask the man who he is and why he saved you, just to realize it's Chris Dougherty! He picks you up and chucks you into the pool to die." />
       <RowSeparator />
       <RowItem
-        title="Go through the door"
+        title="Death"
         icon={
           <AntDesign
             name="login"
             size={24}
             color="black"
-            onPress={() => navigation.push("The Lit Up Door")}
-          />
-        }
-      />
-
-      <RowSeparator />
-
-      <RowItem
-        title="Walk around the room to find something else."
-        icon={
-          <Entypo
-            name="chevron-right"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("Exploration")}
+            onPress={() => navigation.push("Death")}
           />
         }
       />
