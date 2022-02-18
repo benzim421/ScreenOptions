@@ -1,8 +1,9 @@
 import React from "react";
-import { Linking, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Linking, SafeAreaView, StyleSheet } from "react-native";
 import { RowSeparator, RowItem, StoryText } from "../components/rowitems";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import Navigation from "./Navigation";
 
 const styles = StyleSheet.create({
   text: {
@@ -31,7 +32,33 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText text="The Portal isn't real. You're dead." />
+      <StoryText text="As you walk out the other side of the portal, you see a dolphin you can ride off into the ocean and a horse you can ride off into the land." />
+      <RowSeparator />
+      <RowItem
+        title="Ride Dolphin"
+        icon={
+          <AntDesign
+            name="login"
+            size={24}
+            color="black"
+            onPress={() => navigation.push("The Dolphin Ride")}
+          />
+        }
+      />
+
+      <RowSeparator />
+      <RowItem
+        title="Ride Horse"
+        icon={
+          <AntDesign
+            name="login"
+            size={24}
+            color="black"
+            onPress={() => navigation.push("The Horse Ride")}
+          />
+        }
+      />
+
       <RowSeparator />
     </SafeAreaView>
   );

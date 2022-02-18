@@ -32,9 +32,8 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText text="You turn to run towards the portal and feel that you're moving extremely slow. Because of this, you instintively drop the bag of gold and hear a thud soon after. You don't look back, but entering the portal successfully, you assume the tiger tripped and fell. You enter into the most magical place ever, with beatiful surroundings, beautiful people, and happiness. Out of nowhere, you hear something resembling fast running. You turn around to see the tiger charging in your direction, and proceed to get eaten by it. Maybe you shouldn't thrown the gold at it." />
+      <StoryText text="The Dolphin ends up being a shark and you get eaten. Sorry." />
       <RowSeparator />
-
       <RowItem
         title="Play Again"
         icon={

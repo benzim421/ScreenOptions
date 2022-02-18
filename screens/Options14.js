@@ -32,7 +32,7 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText text="You remember that you play baseball, take the gold and throw it perfectly at the tigers eye. It falls to the ground, and isn't able to get back up. Just to make sure you're safe yo=u throw a couple more bars of gold at it. With newfound time, you collect even more gold and walk through the portal. It is the most magical place you've ever seen, and with all of your money you live a happy and successful life. Maybe money does buy a bit of happiness after all." />
+      <StoryText text="The Horse turn into a giant eagle and you fly off into the sky. At a certain point you start hanging on for dear life but you just can't hold on! You fall to what seems like your death until you surprisingly land in a pool of water. You swim to the surface only to realize you've won the game. " />
       <RowSeparator />
     </SafeAreaView>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Linking, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Linking, SafeAreaView, StyleSheet, Text, Image } from "react-native";
 import { RowSeparator, RowItem, StoryText } from "../components/rowitems";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginRight: 20,
+  },
+  img: {
+    width: "auto",
+    height: 400,
+    marginTop: 20,
+    marginLeft: 5,
   },
 });
 
@@ -63,6 +69,12 @@ export default ({ navigation }) => {
       />
 
       <RowSeparator />
+      <Image
+        style={styles.img}
+        source={{
+          uri: "https://wallpapercave.com/wp/31K91HR.jpg",
+        }}
+      />
     </SafeAreaView>
   );
 };

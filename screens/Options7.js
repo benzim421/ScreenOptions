@@ -32,7 +32,7 @@ const openURL = (url) => {
 export default ({ navigation }) => {
   return (
     <SafeAreaView>
-      <StoryText text="You're slowly making your way across the beam and you feel that you are extremely close to the end. On the final step, a gust of wind hits you and you fall! Mid fall, however, someone catches you from above. Heart pounding through your chest, yelling for help, you get pulled up. You feel relieved and look up to ask the man who he is and why he saved you, just to realize it's Chris Dougherty! He picks you up and chucks you into the pool to die." />
+      <StoryText text="You're slowly making your way across the beam and you feel that you are extremely close to the end. On the final step, a gust of wind hits you and you fall! Mid fall, however, someone catches you from above. Heart pounding through your chest, yelling for help, you get pulled up. You feel relieved and look up to ask the man who he is and why he saved you, just to realize it's Chris Dougherty! He picks you up and chucks you into the pool to die. I'd click on the death option if I were you." />
       <RowSeparator />
       <RowItem
         title="Death"

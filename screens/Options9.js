@@ -34,18 +34,6 @@ export default ({ navigation }) => {
     <SafeAreaView>
       <StoryText text="As you enter into what looks like a magical place, darkness quickly surrounds you. You come to realize that maybe the simulation is playing tricks on you. You are actually on a deserted island with absolutely no resources, making it feel like you're in the movie Castaway. Hahaha, I'm just kidding. You won. Wasn't that simple?" />
       <RowSeparator />
-      <RowItem
-        title="Victory!"
-        icon={
-          <AntDesign
-            name="login"
-            size={24}
-            color="black"
-            onPress={() => navigation.push("Gold Collection")}
-          />
-        }
-      />
-      <RowSeparator />
     </SafeAreaView>
   );
 };

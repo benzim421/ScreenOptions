@@ -38,7 +38,18 @@ export default ({ navigation }) => {
         title="Bad Choice"
         icon={<AntDesign name="login" size={24} color="black" />}
       />
-
+      <RowSeparator />
+      <RowItem
+        title="Play Again"
+        icon={
+          <AntDesign
+            name="login"
+            size={24}
+            color="black"
+            onPress={() => navigation.push("The Beginning")}
+          />
+        }
+      />
       <RowSeparator />
     </SafeAreaView>
   );

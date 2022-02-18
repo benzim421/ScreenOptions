@@ -14,6 +14,8 @@ import Options9 from "./Options9";
 import Options10 from "./Options10";
 import Options11 from "./Options11";
 import Options12 from "./Options12";
+import Options13 from "./Options13";
+import Options14 from "./Options14";
 
 export const MainStack = createStackNavigator();
 const MainStackScreen = () => (
@@ -30,6 +32,8 @@ const MainStackScreen = () => (
     <MainStack.Screen name="The Bad Portal" component={Options10} />
     <MainStack.Screen name="The Throw" component={Options11} />
     <MainStack.Screen name="The Sprint to Safety" component={Options12} />
+    <MainStack.Screen name="The Dolphin Ride" component={Options13} />
+    <MainStack.Screen name="The Horse Ride" component={Options14} />
   </MainStack.Navigator>
 );
 
